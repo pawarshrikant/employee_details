@@ -1,0 +1,31 @@
+
+ 
+#include <stdio.h>
+ 
+/*structure declaration*/
+struct employee{
+    char    name[30];
+    int     age,phonenumber;
+    float   salary;
+};
+ 
+int main()
+{
+    
+    struct employee emp;
+     
+   
+    printf("\nEnter details :\n");
+    printf("Name:");          gets(emp.name);
+    printf("Age:");            scanf("%d",&emp.age);
+    printf("Phone number:");     scanf("%d",&emp.phonenumber);
+    printf("Salary:");        scanf("%f",&emp.salary);
+     
+    
+    printf("\nEntered detail is:");
+    printf("Name: %s"   ,emp.name);
+    printf("Age: %d"     ,emp.age);
+    printf("Phone number: %d", emp.phonenumber);
+    printf("Salary: %f\n",emp.salary);
+    return 0;
+}
